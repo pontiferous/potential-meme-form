@@ -1,0 +1,60 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+  h1{
+
+  }
+
+  p{
+
+  }
+
+  input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+</style>
+
+<h1 id="title">Sign Up</h1>
+
+<p id="description">Fill in the form below for access to game notes and loot!</p>
+
+<form id="survey-form" action="/submit-gamer-info">
+  <label id="name-label">Name:</label>
+    <input type="text" id="name" required placeholder="First and Last Name"><br>
+  <label id="email-label">Email:</label>
+    <input type="email" id="email" required placeholder="Valid Email Address"><br>
+  <label id="number-label">Phone number:</label>
+     <input type="number" id="number" required minlength="10" maxlength="10" placeholder="1234567891">
+  <br><br>
+
+  <h2>Select Game:</h2>
+
+  <!-- inputs for drop down option -->
+  <h4>Hold ctl to select multiple games.</h4><br>
+  <select name="game" id="dropdown" multiple><br>
+    <option value="pathfinder"> Pathfinder</option>
+    <option value="starfinder"> Starfinder</option>
+    <option value="mutants"> Mutants & Masterminds</option>
+  </select><br><br>
+
+  <!--inputs for radio option -->
+  <input type="radio" name="game" value="pathfinder"> Pathfinder<br>
+  <input type="radio" name="game" value="starfinder"> Starfinder<br>
+  <input type="radio" nmae="game" value="mutants"> Mutants & Masterminds<br><br>
+
+  <!-- inputs for checkbox option -->
+  <input type="checkbox" id="pathfinder" value="pathfinder"> Pathfinder<br>
+  <input type="checkbox" id="starfinder" value="starfinder"> Starfinder<br>
+  <input type="checkbox" id="mutants" value="mutants"> Mutants & Masterminds<br><br>
+
+  <!-- optional addtional comments area -->
+  <p>Additinal Comments:</p>
+  <textarea rows="4" cols="50"></textarea><br><br>
+
+  <input id="submit" type="Submit"><br><br>
+
+</form>
