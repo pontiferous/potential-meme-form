@@ -19,16 +19,18 @@ input:valid {
 </style>
 
 <h1 id="title">Sign Up</h1>
-
 <p id="description">Fill in the form below for access to game notes and loot!</p>
 
 <form id="survey-form" action="/submit-gamer-info">
+
   <label id="name-label">Name:</label>
     <input type="text" id="name" required placeholder="First and Last Name"><br>
+
   <label id="email-label">Email:</label>
     <input type="email" id="email" required placeholder="Valid Email Address"><br>
+
   <label id="number-label">Phone number:</label>
-     <input type="number" id="number" required minlength="10" maxlength="10" placeholder="1234567891">
+     <input type="number" id="number" required min="10" max="10" placeholder="0123456789">
   <br><br>
 
   <h2>Select Game:</h2>
@@ -42,9 +44,12 @@ input:valid {
   </select><br><br>
 
   <!--inputs for radio option -->
-  <input type="radio" name="game" value="pathfinder"> Pathfinder<br>
-  <input type="radio" name="game" value="starfinder"> Starfinder<br>
-  <input type="radio" nmae="game" value="mutants"> Mutants & Masterminds<br><br>
+  <input type="radio" name="game-name" value="pathfinder">
+     <label for="pathfinder">Pathfinder</label><br>
+  <input type="radio" name="game-name" value="starfinder">
+    <label for ="starfinder">Starfinder</label><br>
+  <input type="radio" name="game-name" value="mutants">
+    <label for ="mutants">Mutants & Masterminds</label><br><br>
 
   <!-- inputs for checkbox option -->
   <input type="checkbox" id="pathfinder" value="pathfinder"> Pathfinder<br>
