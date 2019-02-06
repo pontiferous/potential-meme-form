@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-<style>
   <!-- CSS links will need to be fixed assuming this index page goes into its own folder-->
-  <!-- but between the style tags is just copy/paste from the original index page.-->
+  <!-- CSS styles won't show up or be fixed until this file is in its own foleder an linked to the main.css file-->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <!--This index file is the main index file; default game and home page are Pathfinder.-->
 
   <title>User Form</title>
 
@@ -28,7 +25,6 @@
 
 </head>
 
-</style>
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -73,7 +69,19 @@
 </header>
 
 <h2>Select Game:</h2>
+
 <form>
+<!-- we'll want to choose the best input method. -->
+<!-- Basically, anything but radio buttons is okay with me -->
+<label id="name-label">Name:</label><br><br>
+   <input type="text" id="name" required placeholder="First and Last Name"><br>
+ <label id="email-label">Email:</label><br><br>
+    <input type="email" id="email" required placeholder="Valid Email Address"><br>
+ <label for="username">Username:</label><br><br>
+    <input type=text id="username" required><br><br>
+ <label for="pass">Password (8 characters minimum):</label><br><br>
+    <input type="password" id="pass" name="password" minlength="8" required><br><br>
+
 <!-- inputs for drop down option -->
 <h4>Hold ctl to select multiple games.</h4><br>
   <select name="game" id="dropdown" multiple><br>
