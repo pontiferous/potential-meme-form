@@ -1,65 +1,152 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
 <style>
-  h1{
+  <!-- CSS links will need to be fixed assuming this index page goes into its own folder-->
+  <!-- but between the style tags is just copy/paste from the original index page.-->
 
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  p{
+  <!--This index file is the main index file; default game and home page are Pathfinder.-->
 
-  }
+  <title>User Form</title>
 
-  input:invalid {
-  border: 2px dashed red;
-}
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-input:valid {
-  border: 2px solid black;
-}
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
 
 </style>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+  <!--  <a class="navbar-brand" href="index.html">Home</a> -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!--Pathfinder as index since it's the most used-->
+          <a class="nav-link" href="index.html">Pathfinder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="starfinder.html">Starfinder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="darkness.html">World of Darkness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mutants.html">Mutants & Masterminds</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<h1 id="title">Sign Up</h1>
-<p id="description">Fill in the form below for access to game notes and loot!</p>
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>User Signup Form</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<form id="survey-form" action="/submit-gamer-info">
-
-  <label id="name-label">Name:</label>
-    <input type="text" id="name" required placeholder="First and Last Name"><br>
-
-  <label id="email-label">Email:</label>
-    <input type="email" id="email" required placeholder="Valid Email Address"><br>
-
-  <label id="number-label">Phone number:</label>
-     <input type="number" id="number" required min="10" max="10" placeholder="0123456789">
-  <br><br>
-
-  <h2>Select Game:</h2>
-
-  <!-- inputs for drop down option -->
-  <h4>Hold ctl to select multiple games.</h4><br>
+<h2>Select Game:</h2>
+<form>
+<!-- inputs for drop down option -->
+<h4>Hold ctl to select multiple games.</h4><br>
   <select name="game" id="dropdown" multiple><br>
     <option value="pathfinder"> Pathfinder</option>
     <option value="starfinder"> Starfinder</option>
     <option value="mutants"> Mutants & Masterminds</option>
-  </select><br><br>
+</select><br><br>
 
   <!--inputs for radio option -->
-  <input type="radio" name="game-name" value="pathfinder">
+<input type="radio" name="game-name" value="pathfinder">
      <label for="pathfinder">Pathfinder</label><br>
-  <input type="radio" name="game-name" value="starfinder">
+<input type="radio" name="game-name" value="starfinder">
     <label for ="starfinder">Starfinder</label><br>
-  <input type="radio" name="game-name" value="mutants">
+<input type="radio" name="game-name" value="mutants">
     <label for ="mutants">Mutants & Masterminds</label><br><br>
 
   <!-- inputs for checkbox option -->
-  <input type="checkbox" id="pathfinder" value="pathfinder"> Pathfinder<br>
-  <input type="checkbox" id="starfinder" value="starfinder"> Starfinder<br>
-  <input type="checkbox" id="mutants" value="mutants"> Mutants & Masterminds<br><br>
+<input type="checkbox" id="pathfinder" value="pathfinder"> Pathfinder<br>
+<input type="checkbox" id="starfinder" value="starfinder"> Starfinder<br>
+<input type="checkbox" id="mutants" value="mutants"> Mutants & Masterminds<br><br>
 
   <!-- optional addtional comments area -->
-  <p>Additinal Comments:</p>
-  <textarea rows="4" cols="50"></textarea><br><br>
+<p>Additinal Comments:</p>
+<textarea rows="4" cols="50"></textarea><br><br>
 
-  <input id="submit" type="Submit"><br><br>
+<input id="submit" type="Submit"><br><br>
 
 </form>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Apiary 2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
